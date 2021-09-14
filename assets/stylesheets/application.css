@@ -1,0 +1,775 @@
+/* Estilo do Site*/
+
+/* ========================== ROOT ========================== */
+
+body {
+    margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+    background-color: rgba(250, 250, 250, 1.0);
+}
+
+.container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.container-main {
+    padding: 10px 15px;
+    min-height: 900px;
+}
+
+.flex-row-around {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+}
+
+.flex-row-between {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-column-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+}
+
+@media screen and (min-width: 0px) and (max-width: 796px) {
+    .flex-row-around {
+		justify-content: center;
+	}
+	
+}
+
+
+
+
+
+/* ============= Title / Paragrafo ============= */
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    margin-bottom: 0.3rem;
+    font-weight: 400;
+}
+  
+p {
+    margin: 0;
+    margin-bottom: 0.8rem;
+}
+
+h1 {
+    font-size: 2.0rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+h3 {
+    font-size: 1.6rem;
+}
+
+h4 {
+    font-size: 1.4rem;
+}
+
+h5 {
+    font-size: 1.2rem;
+}
+
+h6 {
+    font-size: 0.8rem;
+}
+
+
+
+
+
+/* ============= Links / Iframe ============= */
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: rgb(105, 105, 105);
+}
+
+iframe {
+    width: 900px;
+    height: 300px;
+}
+
+@media screen and (min-width: 780px) and (max-width: 930px) {
+    iframe {
+		width: 750px;
+        height: 250px;
+	}
+	
+}
+
+@media screen and (min-width: 660px) and (max-width: 780px) {
+    iframe {
+		width: 600px;
+        height: 200px;
+	}
+	
+}
+
+@media screen and (min-width: 0px) and (max-width: 660px) {
+    iframe {
+		width: 300px;
+        height: 200px;
+	}
+}
+
+
+
+
+
+/* ============= Listas ============= */
+
+
+
+
+
+/* ============= Tabelas ============= */
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 1rem;
+    background-color: transparent;
+}
+
+caption {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    color: #6c757d;
+    text-align: center;
+    caption-side: top;
+}
+
+th {
+    text-align: center;
+}
+
+table th,
+table td {
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+}
+
+table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6;
+    color: #fff;
+    background-color: #212529;
+    border-color: #32383e;
+}
+
+table tbody tr:hover {
+    background-color: rgba(0, 0, 0, 0.075);
+}
+
+tfoot {
+    background-color: #969696;
+}
+
+
+
+
+
+/* ============= Formulário ============= */
+
+form {
+    border: 1px solid black;
+    width: 600px;
+    height: 450px;
+    padding: 15px;
+}
+
+input {
+    margin: 2px;
+    padding: 5px;
+    width: 220px;
+    height: 20px;
+    line-height: 10px;
+    border-radius: 5px;
+}
+
+select {
+    margin: 2px;
+    padding: 5px;
+    width: 220px;
+    height: 30px;
+    
+    border-radius: 5px;
+}
+
+select:hover {
+    background-color: white;
+    color: green;
+    transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+input[type=email] {
+    width: 550px;
+}
+
+input[type=text] {
+    text-transform: uppercase;
+}
+
+input[type=radio] {
+    /* remove standard background appearance */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* create custom radiobutton appearance */
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    /* background-color only for content */
+    background-clip: content-box;
+    border: 2px solid #bbbbbb;
+    background-color: #e7e6e7;
+    color: green;
+}
+
+/* appearance for checked radiobutton */
+input[type="radio"]:checked {
+    background-color: #93e026;
+}
+
+label {
+    display: inline-block;
+    padding-top: calc(0.375rem + 1px);
+    line-height: 1.5;
+    position: static;
+}
+
+button {
+    display: inline-block;
+    font-weight: 500;
+    text-align: center;
+    border: 1px solid transparent;
+    padding: 5px;
+    width: 120px;
+    height: 30px;
+    background-color: green;
+    color: white;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    margin: 5px 0;
+    line-height: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(166, 255, 166);
+    color:green;
+    border: 1px solid green;
+}
+
+
+
+
+
+/* ========================== HTML SEMANTICO ========================== */
+/* definir melhor o significado do conteúdo dos nossos documentos */
+
+#html-semantico {
+    min-height: 600px;
+    margin: 10px;
+    background-color: gray;
+}
+
+#header-semantico {
+    height: 60px;
+    background-color: rgb(22, 22, 22);
+}
+
+#main-semantico {
+    height: 460px;
+    background-color: rgb(180, 180, 180);
+}
+
+#footer-semantico {
+    text-align: center;
+}
+
+#footer-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+
+
+/* ========================== HEADER ========================== */
+/* utilizado para representar o cabeçalho ou topo de um documento */
+
+header {
+    background-color: rgba(2, 53, 53, 0.6);
+    text-align: center;
+    height: 70px;
+}
+
+header section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+
+header section nav ul {
+    padding: 0px;
+    margin: 0px;
+    list-style:none;
+}
+
+header section nav ul li {
+    display: inline;
+}
+
+.menu-desktop nav ul li h3 a {
+    padding: 15px 5px;
+}
+
+.menu-desktop nav ul li a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 25px 10px;
+}
+
+.menu-mobile nav .menu-left li a img {
+  width: 35px;
+    height: 35px;
+	padding: 0 5px;
+}
+
+.menu-mobile nav .menu-right li a img {
+    width: 35px;
+    height: 35px;
+	padding: 0 5px;
+}
+
+.menu-desktop {
+	visibility: visible;
+}
+
+.menu-mobile {
+	visibility: hidden;
+}
+
+/* MENU DROPDOWN LEFT */
+
+.menu-left {
+    list-style: none;
+    padding-top: 10px;
+}
+
+.menu-left li {
+    position: relative;
+	float: left;
+}
+
+.menu-left li a {
+    color: #333; 
+    text-decoration: none; 
+    display: block;
+}
+
+.menu-left li a:hover{
+    background: rgba(2, 53, 53, 0.9);
+    color: #fff;
+    text-shadow: 0px 0px 5px #fff;
+    border-radius: 5px;
+}
+
+.menu-left li ul {
+    position: absolute;
+    top: 45px;
+    left: 0;
+    background-color: #fff;
+    display: none;
+}
+
+.menu-left li:hover ul, .menu-left li.over ul {
+    display: block;
+}
+
+.menu-left li ul li {
+    border: 1px solid #c0c0c0;
+    display: block;
+    width: 150px;
+}
+
+/* MENU DROPDOWN RIGHT */
+
+.menu-right {
+    list-style: none;
+    padding-top: 10px;
+}
+
+.menu-right li {
+    position: relative;
+    float: left;
+}
+
+.menu-right li a {
+    color: #333; 
+    text-decoration: none; 
+    display: block;
+}
+
+.menu-right li a:hover{
+    background: rgba(2, 53, 53, 0.9);
+    color: #fff;
+    text-shadow: 0px 0px 5px #fff;
+    border-radius: 5px;
+}
+
+.menu-right li ul {
+    position: absolute;
+    top: 45px;
+    right: 0;
+    background-color: #fff;
+    display: none;
+}
+
+.menu-right li:hover ul, .menu-right li.over ul {
+    display: block;
+}
+
+.menu-right li ul li {
+    border: 1px solid #c0c0c0;
+    display: block;
+    width: 150px;
+}
+
+@media screen and (min-width: 0px) and (max-width: 768px) {
+    .menu-desktop {
+        display: none;
+    }
+    
+    .menu-mobile {
+        visibility: visible;
+    }
+	
+}
+
+
+
+
+
+/* ========================== NAV ========================== */
+/* utilizado quando precisamos representar um agrupamento de links de navegação */
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown a img {
+	padding-right: 15px;
+}
+
+.dropdown-btn {
+  white-space: nowrap;
+}
+
+.dropdown-btn img {
+  width: 25px;
+  height: 25px;
+}
+
+.dropdown-btn::after {
+  display: inline-block;
+  margin-left: 5px;
+  vertical-align: 5px;
+  content: "";
+  border-top: 5px solid;
+  border-right: 5px solid transparent;
+  border-bottom: 0;
+  border-left: 5px solid transparent;
+}
+
+.dropdown-toggle:empty::after {
+  margin-left: 0;
+}
+
+.dropdown-menu {
+  position: relative;
+  z-index: 1000;
+  display: block;
+  min-width: 178px;
+  padding: 3px 0;
+  margin: 0 7px;
+  font-size: 16px;
+  color: #212529;
+  text-align: left;
+  list-style: none;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+}
+
+.dropdown-item {
+  display: block;
+  width: 100%;
+  padding: 4px 8px;
+  clear: both;
+  font-weight: 400;
+  color: #212529;
+  text-align: inherit;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+}
+.dropdown-item:hover, .dropdown-item:focus {
+  color: #1e2125;
+  background-color: #e9ecef;
+  border-radius:5px;
+  max-width: 150px;
+}
+.dropdown-item.active, .dropdown-item:active {
+  color: #fff;
+  text-decoration: none;
+  background-color: rgba(2, 53, 53, 0.9);
+}
+.dropdown-item.disabled, .dropdown-item:disabled {
+  color: #adb5bd;
+  pointer-events: none;
+  background-color: transparent;
+}
+
+
+
+
+
+/* ========================== MAIN ========================== */
+/* especifica o conteúdo principal e de maior relevância dentro da página */
+
+main {
+    display: flex;
+    flex-direction: row;
+    min-height: 900px;
+    min-width: 300px;
+}
+
+
+
+
+
+/* ========================== ASIDE ========================== */
+/* utilizado quando precisamos criar um conteúdo de apoio/adicional ao conteúdo principal */
+
+main aside {
+	background-color: rgba(2, 53, 53, 0.6);
+    width: 200px;
+    top: 60px;
+	padding-top: 20px;
+}
+
+main aside nav ul {
+    padding: 0px;
+    margin: 0px;
+    list-style:none;
+    text-align: left;
+}
+
+main aside nav ul li img {
+    width: 25px;
+    height: 25px;
+}
+
+main aside nav ul li img, a {
+    display: inline-table;
+    vertical-align: middle;
+	margin: 5px;
+    padding: 3px;
+}
+
+.menu-link {
+    display: block;
+}
+
+.menu-icon {
+    display: none;
+}
+
+.menu-icon ul li a img:hover {
+    color: black;
+}
+
+@media screen and (min-width: 1200px) and (max-width: 2000px) {
+    main aside {
+        width: 300px;
+    }
+
+}
+
+@media screen and (min-width: 500px) and (max-width: 768px) {
+    main aside {
+        width: 60px;
+    }
+	
+    .menu-link {
+        display: none;
+    }
+    
+    .menu-icon {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 500px) {
+    main aside {
+        display: none;
+    }
+
+}
+
+
+
+
+
+/* ========================== SECTION ========================== */
+/* representa uma seção dentro de um documento */
+
+main section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+	align-items: stretch;
+	width: 100%;
+}
+
+#div-header {
+	display: flex;
+    flex-direction: row;
+	flex-grow: 1;
+	background-color: red;
+	border: 5px solid yellow;	
+}
+
+#div-body {
+	display: flex;
+    flex-direction: row;
+	flex-grow: 10;
+	border: 5px solid yellow;
+	background-color: blue;
+}
+
+#div-footer {
+	display: flex;
+    flex-direction: row;
+	flex-grow: 1;
+	border: 5px solid yellow;
+	background-color: green;
+}
+
+
+
+
+/* ========================== DIV ========================== */
+/* representa uma divisão dentro de um documento */
+
+
+
+
+
+/* ========================== ARTICLE ========================== */
+/* quando precisamos declarar um conteúdo que não precisa de outro para fazer sentido */
+
+
+
+
+
+/* ========================== FIGURE ========================== */
+/* uma marcação de uso específico para a inserção de uma figura */
+
+figure {
+    margin: 0;
+    background-color: rgb(209, 209, 209);
+}
+
+figcaption {
+    padding: 10px 0;
+    font-size: 30px;
+    text-align: center;
+}
+
+.imagem {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+}
+
+@media screen and (min-width: 0px) and (max-width: 796px) {
+    .imagem {
+		display: block;
+	}
+	
+}
+
+
+
+
+
+/* ========================== FOOTER ========================== */
+/* representa um rodapé de um documento */
+
+footer {
+    background-color: rgba(2, 53, 53, 0.2);
+    text-align: center;
+}
+
+footer section {
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: space-around;
+    align-items: top;
+}
+
+footer section nav ul {
+	list-style: none;
+    padding: 5px;
+}
+
+footer h6 {
+    margin: 0;
+    padding-bottom: 10px;
+    font-size: 0.9rem;
+}
+
+
+
+
