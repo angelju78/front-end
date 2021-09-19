@@ -1,118 +1,357 @@
 <!doctype html>
 <html lang="pt-br">
-    <head>
-        <title>Html Semântico</title>
-        <meta charset="UTF-8">
-        <meta name="description" content="Descrição do Site" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="robots" content="noindex">
-        <link rel="stylesheet" href="assets/stylesheets/application.css">
-        <link rel="icon" type="image/png" href="assets/icons/favicon.png">
-    </head>
-    <body class="container">
-        <header>
-            <section class="menu-desktop">
-                <nav>
-                    <ul>
-                        <li><h3><a href="" target="_self">DESKTOP</a></h3></li>
-                    </ul>
-                </nav>
-                <nav>
-                    <ul>
-                        <li><a href="" target="_self">Link 1</a></li>
-                        <li><a href="" target="_self">Link 2</a></li>
-                        <li><a href="" target="_self">Link 3</a></li>
-                    </ul>
-                </nav>
-            </section>
-            <section class="menu-mobile">
-				<nav>
-                    <ul class="menu-left">
-                        <li><a href="#"><img src="assets/icons/list-view-24.png"></a>
-                            <ul>
-                                <li><a href="#">Link 1</a></li>
-                                <li><a href="#">Link 2</a></li>
-                                <li><a href="#">Link 3</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </nav>
-                <nav>
-                    <ul class="menu-right">
-                        <li><a href="#"><img src="assets/icons/user.png"></a>
-                            <ul>
-                                <li><a href="#">Link 1</a></li>
-                                <li><a href="#">Link 2</a></li>
-                                <li><a href="#">Link 3</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </nav>
-            </section>
-        </header>
-		<!-- MENU TOPO -->
-        <main>
-            <aside>
-                <nav class="menu-link">
-                    <ul>
-                        <li><img src="assets/icons/home-5-64.png"><a href="" target="_self">Link 1</a></li>
-                        <li><img src="assets/icons/text-file-4-64.png"><a href="" target="_self">Link 2</a></li>
-                        <li><img src="assets/icons/settings-4-64.png"><a href="" target="_self">Link 3</a></li>
-						<div class="dropdown">
-						  <a class="dropdown-btn" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							Dropdown link
-						  </a>
 
-						  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-							<a class="dropdown-item" href="#">Dropdown Link 1</a>
-							<a class="dropdown-item" href="#">Dropdown Link 2</a>
-							<a class="dropdown-item" href="#">Dropdown Link 3</a>
-						  </div>
-						</div>
-                    </ul>
+<head>
+    <title>FlexBox</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Descrição do Site" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <link rel="stylesheet" href="src/stylesheets/application.css">
+    <link rel="stylesheet" href="src/stylesheets/styles.css">
+    <link rel="stylesheet" href="src/stylesheets/responsive.css">
+    <link rel="icon" type="image/png" href="src/icons/favicon.png">
+</head>
+
+<body>
+    <header class="container container-row container-evenly bg-dark header">
+        <section class="container container-column container-flexstart">
+            <navc>
+                <ul class="container container-row container-evenly list-style-none link-white">
+                    <li class="display-inline padding-10"><a href="" target="_self"><img src="src/icons/favicon.png"
+                                class="logo-imagem"></a></li>
+                    <li class="menu-desktop display-inline"><a href="" target="_self" class="text-align">DESKTOP</a>
+                    </li>
+                </ul>
                 </nav>
-                <nav class="menu-icon">
-                    <ul>
-                        <li><a href="" target="_self"><img src="assets/icons/home-5-64.png"></a></li>
-                        <li><a href="" target="_self"><img src="assets/icons/text-file-4-64.png"></a></li>
-                        <li><a href="" target="_self"><img src="assets/icons/settings-4-64.png"></a></li>
-                    </ul>
-                </nav>
-            </aside>
-			<!-- MENU LATERAL -->
-            <section>
-				<div id="div-header"><p>HEADER</p></div>
-				<div id="div-body"><p>BODY</p></div>
-				<div id="div-footer"><p>FOOTER</p></div>		
-			</section>
-        </main>
-        <footer>
-            <section>
-                <nav>
-                    <ul>
-                        <li><a href="" target="_blank">Link 1</a></li>
-                        <li><a href="" target="_blank">Link 2</a></li>
-                        <li><a href="" target="_blank">Link 3</a></li>
-                    </ul>
-                </nav>
-                <nav>
-                    <ul>
-                        <li><a href="" target="_blank">Link 1</a></li>
-                        <li><a href="" target="_blank">Link 2</a></li>
-                        <li><a href="" target="_blank">Link 3</a></li>
-                        <li><a href="" target="_blank">Link 4</a></li>
-                        <li><a href="" target="_blank">Link 5</a></li>
-                    </ul>
-                </nav>
-                <nav>
-                    <ul>
-                        <li><a href="" target="_blank">Link 1</a></li>
-                        <li><a href="" target="_blank">Link 2</a></li>
-                        <li><a href="" target="_blank">Link 3</a></li>
-                    </ul>
-                </nav>
-            </section>
+        </section>
+        <section class="container container-column container-flexend">
+            <nav class="menu-desktop">
+                <ul class="list-style-none link-white">
+                    <li class="display-inline padding-10"><a href="" target="_self">Link 1</a></li>
+                    <li class="display-inline padding-10"><a href="" target="_self">Link 2</a></li>
+                    <li class="display-inline padding-10"><a href="" target="_self">Link 3</a></li>
+                </ul>
+            </nav>
+            <nav class="menu-mobile">
+                <ul class="menu-dropdown-right">
+                    <li><a href="#"><img src="src/icons/icons8-user-64.png" class="icon"></a>
+                        <ul>
+                            <li><a href="" class="menu-dropdown-right-close"><img src="src/icons/x-mark-64.png"
+                                        class="icon-30"></a>
+                            <li><a href="#">Link 1</a></li>
+                            <li><a href="#">Link 2</a></li>
+                            <li><a href="#">Link 3</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+    <!-- MENU TOPO -->
+    <main class="container container-row">
+        <aside class="aside">
+            <nav class="menu-desktop">
+                <ul>
+                    <div class="dropdown">
+                        <ul
+                            class="container container-row container-start list-style-none link-white padding-top-left-10">
+                            <li class="display-inline"><a href="" role="button" id="dropdownMenuLink1"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                                    target="_self"><img src="src/icons/home-5-64.png" class="icon-30"></a></li>
+                            <li class="display-inline"><a href="" target="_self" class="text-align">Dropdown A</a></li>
+                        </ul>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink1">
+                            <a class="dropdown-item" href="#">Dropdown Link 1</a>
+                            <a class="dropdown-item" href="#">Dropdown Link 2</a>
+                            <a class="dropdown-item" href="#">Dropdown Link 3</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <ul
+                            class="container container-row container-start list-style-none link-white padding-top-left-10">
+                            <li class="display-inline"><a href="" role="button" id="dropdownMenuLink2"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                                    target="_self"><img src="src/icons/text-file-4-64.png" class="icon-30"></a></li>
+                            <li class="display-inline"><a href="" target="_self" class="text-align">Dropdown B</a></li>
+                        </ul>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink2">
+                            <a class="dropdown-item" href="#">Dropdown Link 1</a>
+                            <a class="dropdown-item" href="#">Dropdown Link 2</a>
+                            <a class="dropdown-item" href="#">Dropdown Link 3</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <ul
+                            class="container container-row container-start list-style-none link-white padding-top-left-10">
+                            <li class="display-inline"><a href="" role="button" id="dropdownMenuLink3"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                                    target="_self"><img src="src/icons/text-file-4-64.png" class="icon-30"></a></li>
+                            <li class="display-inline"><a href="" target="_self" class="text-align">Dropdown C</a></li>
+                        </ul>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink3">
+                            <a class="dropdown-item" href="#">Dropdown Link 1</a>
+                            <a class="dropdown-item" href="#">Dropdown Link 2</a>
+                            <a class="dropdown-item" href="#">Dropdown Link 3</a>
+                        </div>
+                    </div>
+                    <br>
+                    <hr>
+                    <div class="dropdown">
+                        <ul
+                            class="container container-row container-start list-style-none link-white padding-top-left-10">
+                            <li class="display-inline"><a href="" role="button" id="dropdownMenuLink4"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                                    target="_self"><img src="src/icons/text-file-4-64.png" class="icon-30"></a></li>
+                            <li class="display-inline"><a href="" target="_self" class="text-align">Dropdown D</a></li>
+                        </ul>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink4">
+                            <a class="dropdown-item" href="#">Dropdown Link 1</a>
+                            <a class="dropdown-item" href="#">Dropdown Link 2</a>
+                            <a class="dropdown-item" href="#">Dropdown Link 3</a>
+                        </div>
+                    </div><br>
+                </ul>
+            </nav>
+            <nav class="menu-mobile">
+                <ul>
+                    <nav>
+                        <ul class="menu-dropdown-left">
+                            <li><a href="#"><img src="src/icons/home-5-64.png" class="icon-30"></a>
+                                <ul>
+                                    <li><a href="#">Link 1</a></li>
+                                    <li><a href="#">Link 2</a></li>
+                                    <li><a href="#">Link 3</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                    <nav>
+                        <ul class="menu-dropdown-left">
+                            <li><a href="#"><img src="src/icons/text-file-4-64.png" class="icon-30"></a>
+                                <ul>
+                                    <li><a href="#">Link 1</a></li>
+                                    <li><a href="#">Link 2</a></li>
+                                    <li><a href="#">Link 3</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                    <nav>
+                        <ul class="menu-dropdown-left">
+                            <li><a href="#"><img src="src/icons/error-3-64.png" class="icon-30"></a>
+                                <ul>
+                                    <li><a href="#">Link 1</a></li>
+                                    <li><a href="#">Link 2</a></li>
+                                    <li><a href="#">Link 3</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                    <br>
+                    <hr>
+                    <nav>
+                        <ul class="menu-dropdown-left">
+                            <li><a href="#"><img src="src/icons/settings-4-64.png" class="icon-30"></a>
+                                <ul>
+                                    <li><a href="#">Link 1</a></li>
+                                    <li><a href="#">Link 2</a></li>
+                                    <li><a href="#">Link 3</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </ul>
+            </nav>
+        </aside>
+        <!-- MENU LATERAL -->
+        <section class="section">
+            <header class="container container-column container-evenly header-painel">
+                <section class="container container-row">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+                            <li class="breadcrumb-item"><a href="#">Financeiro</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Contas a Receber</li>
+                        </ol>
+                    </nav>
+                </section>
+            </header>
+            <main>
+                <!-- Ícones -->
+                <section class="">
+                    <div class="icon-row margin-bottom-20">
+                        <div class="container_menu bordaArredondada divBordaCinzaVazada efeitoHover iconeInicial">
+                            <div class="marginInterna">
+                                <div class="icone"><img src="src/icons/icone_fale_conoco.png" /></div>
+                                <div class="tituloIcone">Fale Conosco</div>
+                            </div>
+                        </div>
+                        <div class="container_menu bordaArredondada divBordaCinzaVazada efeitoHover iconeInicial">
+                            <div class="marginInterna">
+                                <div class="icone"><img src="src/icons/icone_localizacao.png" /></div>
+                                <div class="tituloIcone">Localizaçao</div>
+                            </div>
+                        </div>
+                        <div class="container_menu bordaArredondada divBordaCinzaVazada efeitoHover iconeInicial">
+                            <div class="marginInterna">
+                                <div class="icone"><img src="src/icons/icone_galeria_de_fotos.png" /></div>
+                                <div class="tituloIcone">Galeria de Produtos</div>
+                            </div>
+                        </div>
+                        <div class="container_menu bordaArredondada divBordaCinzaVazada efeitoHover iconeInicial">
+                            <div class="marginInterna">
+                                <div class="icone"><img src="src/icons/icone_redes_sociais.png" /></div>
+                                <div class="tituloIcone">Redes Sociais</div>
+                            </div>
+                        </div>
+                        <div class="container_menu bordaArredondada divBordaCinzaVazada efeitoHover iconeInicial">
+                            <div class="marginInterna">
+                                <div class="icone"><img src="src/icons/setting.png  " /></div>
+                                <div class="tituloIcone">Configurações</div>
+                            </div>
+                        </div>
+                        <div class="container_menu bordaArredondada divBordaCinzaVazada efeitoHover iconeInicial">
+                            <div class="marginInterna">
+                                <div class="icone"><img src="src/icons/user.png" /></div>
+                                <div class="tituloIcone">Usuários</div>
+                            </div>
+                        </div>
+                        <div class="container_menu bordaArredondada divBordaCinzaVazada efeitoHover iconeInicial">
+                            <div class="marginInterna">
+                                <div class="icone"><img src="src/icons/unlock.png" /></div>
+                                <div class="tituloIcone">Perfil</div>
+                            </div>
+                        </div>
+                        <div class="container_menu bordaArredondada divBordaCinzaVazada efeitoHover iconeInicial">
+                            <div class="marginInterna">
+                                <div class="icone"><img src="src/icons/bars.png" /></div>
+                                <div class="tituloIcone">Relatórios</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Cards -->
+                <section class="wrapper">
+                    <div class="block">
+                        <div class="block-img">
+                            <img src="src/images/img1.webp" alt="HTML5">
+                        </div>
+                        <div class="block-desc">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        </div>
+                        <div class="block-link">
+                            <a href="#">Ver mais</a>
+                        </div>
+                    </div>
+
+                    <div class="block">
+                        <div class="block-img">
+                            <img src="src/images/img2.webp" alt="CSS3">
+                        </div>
+                        <div class="block-desc">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi velit, iusto nihil ex tenetur
+                            temporibus aliquid.
+                        </div>
+                        <div class="block-link">
+                            <a href="#">Ver mais</a>
+                        </div>
+                    </div>
+
+                    <div class="block">
+                        <div class="block-img">
+                            <img src="src/images/img3.webp" alt="jQuery">
+                        </div>
+                        <div class="block-desc">
+                            Lorem ipsum dolor sit amet, consectetur.
+                        </div>
+                        <div class="block-link">
+                            <a href="#">Ver mais</a>
+                        </div>
+                    </div>
+
+                    <div class="block">
+                        <div class="block-img">
+                            <img src="src/images/img4.webp" alt="Apache">
+                        </div>
+                        <div class="block-desc">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi velit, iusto nihil ex tenetur
+                            temporibus aliquid dolores debitis esse
+                            possimus dolorem harum accusantium magnam tempora, ab, assumenda doloribus nam alias?
+                        </div>
+                        <div class="block-link">
+                            <a href="#">Ver mais</a>
+                        </div>
+                    </div>
+
+                    <div class="block">
+                        <div class="block-img">
+                            <img src="src/images/img5.webp" alt="Unity 3D">
+                        </div>
+                        <div class="block-desc">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi velit, iusto nihil ex
+                            tenetur.
+                        </div>
+                        <div class="block-link">
+                            <a href="#">Ver mais</a>
+                        </div>
+                    </div>
+
+                    <div class="block">
+                        <div class="block-img">
+                            <img src="src/images/img6.jpg" alt="Xamarin">
+                        </div>
+                        <div class="block-desc">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi velit, iusto nihil ex tenetur
+                            temporibus aliquid dolores debitis esse
+                            possimus dolorem harum accusantium.
+                        </div>
+                        <div class="block-link">
+                            <a href="#">Ver mais</a>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer class="container container-column container-evenly footer-painel">
+                <section class="container container-row container-center">
+                    <h6>Footer - <i>Dashboard</i></h6>
+                </section>
+            </footer>
+        </section>
+    </main>
+    <footer class="container container-column container-evenly bg-light footer">
+        <section class="container container-row container-evenly">
+            <nav>
+                <ul class="list-style-none link-white">
+                    <li><a href="" target="_self">Link 1</a></li>
+                    <li><a href="" target="_self">Link 2</a></li>
+                    <li><a href="" target="_self">Link 3</a></li>
+                </ul>
+            </nav>
+            <nav>
+                <ul class="list-style-none link-white">
+                    <li><a href="" target="_self">Link 1</a></li>
+                    <li><a href="" target="_self">Link 2</a></li>
+                    <li><a href="" target="_self">Link 3</a></li>
+                    <li><a href="" target="_self">Link 4</a></li>
+                    <li><a href="" target="_self">Link 5</a></li>
+                </ul>
+            </nav>
+            <nav>
+                <ul class="list-style-none link-white">
+                    <li><a href="" target="_self">Link 1</a></li>
+                    <li><a href="" target="_self">Link 2</a></li>
+                    <li><a href="" target="_self">Link 3</a></li>
+                </ul>
+            </nav>
+        </section>
+        <section class="container container-row container-evenly">
             <h6>&copy Copyright 2021 - <i>Desenvolvido por Angelita Santos</i></h6>
-        </footer>
-    </body>
+        </section>
+    </footer>
+
+    <script type="text/javascript" src="src/javascript/application.js"></script>
+    <script type="text/javascript" src="src/javascript/main.js"></script>
+</body>
+
 </html>

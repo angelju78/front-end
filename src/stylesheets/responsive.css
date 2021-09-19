@@ -1,0 +1,93 @@
+/* Estilo do Site */
+
+/* ========================== RESPONSIVE ========================== */
+
+
+@media (min-width: 0px) { 
+    .menu-desktop {
+        display: none;
+    }
+
+    .aside {
+        display: none;
+    }
+}
+
+@media (min-width: 576px) { 
+    .aside {
+        display: block;
+        width: 60px;
+    }
+}
+
+/* Dispositivos médios (tablets com 768px ou mais) */
+@media (min-width: 768px) { 
+    .iconeInicial {
+        width: 200px;
+    }
+
+    .aside {
+        width: 200px;
+    }
+
+    .menu-desktop {
+        display: block;
+    }
+
+    .menu-mobile {
+        display: none;
+    }
+}
+
+/* Dispositivos large (desktops com 992px ou mais) */
+@media (min-width: 992px) { 
+}
+
+/* Dispositivos extra large (desktops grandes com 1200px ou mais) */
+@media (min-width: 1200px) { 
+    .iconeInicial {
+        width: 250px;
+    }
+}
+
+
+
+
+/* Cards */
+
+@media (max-width: 768px){
+    .block {
+        width: calc(100%/2 - 20px);
+    }
+
+    .block-img {
+        height: calc((100vw /2 - 20px) /2);
+    }
+
+    .breadcrumb li a, .breadcrumb-item {
+        font-size: 12px;
+    }
+}
+
+
+@media (max-width: 425px){
+    .block {
+        width: calc(100% - 20px);
+    }
+
+    .block-img {
+        height: calc((100vw - 20px) /2);
+    }
+}
+
+
+@media (max-width: 320px){
+    .block {
+        width: calc(100%);
+        margin: 10px 0;
+    }
+
+    .block-img {
+        height: calc(100vw /2);
+    }
+}
